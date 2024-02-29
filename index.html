@@ -119,6 +119,8 @@
         sunt, nisi aliquid inventore nulla dicta distinctio doloribus temporibus
         commodi ullam quod.
       </p>
+      <hr />
+      <canvas id="draw1"></canvas>
     </main>
 
     <footer>Copyrigth &copy; 2024</footer>
@@ -131,6 +133,12 @@
         counter++;
         console.log("Salut din functie!", counter);
       }
+
+      const canvas = document.getElementById("draw1");
+      const ctx = canvas.getContext("2d");
+
+      ctx.fillStyle = "red";
+      ctx.fillRect(10, 10, 150, 100);
     </script>
 
     <!-- Adugare fisiere externe de JS -->
