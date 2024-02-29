@@ -41,8 +41,8 @@
       Consequatur, iste quam.
 
       <hr />
-      <button>Test</button>
-
+      <button onclick="console.log('Button Clicked!')">Test</button>
+      <button onclick="count()">Test Function</button>
       <hr />
       <input type="button" value="Button from Input" />
       <hr />
@@ -87,27 +87,56 @@
         </li>
       </ul>
       <hr />
-      <img src="horse.jpg" alt="Horse" width="500">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Eopsaltria_australis_-_Mogo_Campground.jpg/640px-Eopsaltria_australis_-_Mogo_Campground.jpg" alt="Bird" width="500">
+      <img src="horse.jpg" alt="Horse" width="500" />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Eopsaltria_australis_-_Mogo_Campground.jpg/640px-Eopsaltria_australis_-_Mogo_Campground.jpg"
+        alt="Bird"
+        width="500"
+      />
       <hr />
       <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis sequi, rem laborum fuga sed possimus ratione ducimus officiis dignissimos perferendis, quidem ea! Fugit blanditiis in voluptatem debitis excepturi officia!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis
+        sequi, rem laborum fuga sed possimus ratione ducimus officiis
+        dignissimos perferendis, quidem ea! Fugit blanditiis in voluptatem
+        debitis excepturi officia!
       </div>
       <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis sequi, rem laborum fuga sed possimus ratione ducimus officiis dignissimos perferendis, quidem ea! Fugit blanditiis in voluptatem debitis excepturi officia!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex perspiciatis
+        sequi, rem laborum fuga sed possimus ratione ducimus officiis
+        dignissimos perferendis, quidem ea! Fugit blanditiis in voluptatem
+        debitis excepturi officia!
       </div>
       <hr />
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga numquam quia, perspiciatis, dolorum tempora delectus laborum dignissimos voluptate perferendis ipsum consectetur beatae facilis magni. Repellendus porro soluta odio earum veniam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga numquam
+        quia, perspiciatis, dolorum tempora delectus laborum dignissimos
+        voluptate perferendis ipsum consectetur beatae facilis magni.
+        Repellendus porro soluta odio earum veniam.
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur debitis expedita, tempore asperiores et odio aliquam soluta architecto sunt, nisi aliquid inventore nulla dicta distinctio doloribus temporibus commodi ullam quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+        debitis expedita, tempore asperiores et odio aliquam soluta architecto
+        sunt, nisi aliquid inventore nulla dicta distinctio doloribus temporibus
+        commodi ullam quod.
       </p>
     </main>
 
     <footer>Copyrigth &copy; 2024</footer>
 
+    <script>
+      console.log("Salut din consola!");
+     
+      let counter = 0;
+      function count() {
+        counter++;
+        console.log("Salut din functie!", counter);
+      }
+    </script>
+
     <!-- Adugare fisiere externe de JS -->
     <script src="script.js"></script>
+
+    <!-- Adugare fisiere externe de JS prin module type -->
+    <script type="module" src="./script-module-way.js"></script>
   </body>
 </html>
