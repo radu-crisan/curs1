@@ -1,1 +1,1 @@
-alert("Salut din documentul script.js!")
+// alert("Salut din documentul script.js!")
